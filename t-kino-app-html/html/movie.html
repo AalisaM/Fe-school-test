@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="#6dd7ff">
+  <meta name="msapplication-TileColor" content="#6dd7ff">
+  <meta name="msapplication-navbutton-color" content="#6dd7ff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#6dd7ff">
+  <title>T-kino</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-styles.css">
+
+</head>
+
+<body class="blackground">
+  <!-- Main Navigation -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav shadow">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <div class="navbar-header navbar-nav mr-auto">
+          <a href="main.html" class="pl-0"><img src="../img/logo/mylogo.png" alt="logo" width="60px"></a>
+          <a class="navbar-brand" href="main.html" style="margin: 15px;">T-Kino</a>
+        </div>
+      </div>
+
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <!-- Navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="addMovie.html"><i class="fas fa-film"></i> <span
+                class="clearfix d-none d-sm-inline-block"> + </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="favs.html"><i class="fas fa-heart"></i> <span
+                class="clearfix d-none d-sm-inline-block">My list</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="login.html">Log out</a>
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="friends.html">Friends</a>
+
+            </div>
+          </li>
+        </ul>
+        <!-- Navbar links -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!-- Main Navigation -->
+  <!-- Main layout -->
+  <main>
+    <div class="container-fluid">
+      <section class="mb-4 mt-4">
+        <div class="row">
+          <div class="col-lg-10 col-md-12 col-sm-12 mx-auto">
+            <!-- Form with header -->
+            <div class="login-form">
+              <!-- Header -->
+              <div class="row">
+                <!-- Title -->
+                <div class="col-lg-12">
+                  <div class="form-group row movie">
+                    <h2 class="col-sm-10">Harry Potter and Sorcerer's Stone</h2>
+                    <p class="col-sm-1" style="padding-right: 20px;"><a href="#"><i class="fas fa-edit"></i> Edit</a>
+                    </p>
+                    <p class="col-sm-1" style="padding-right: 20px;"><a href="#"><i class="far fa-trash-alt"></i>
+                        Delete</a></p>
+                  </div>
+                </div>
+                <!-- Description -->
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group row movie">
+                      <div class="col-lg-8">
+                        <!-- Details -->
+                        <div class="movie-p">
+                          <p>16 Nov 2001, UK, Adventure, Family, Fantasy, <i class="fas fa-stopwatch"> 2h32m </i></p>
+                          <p><b>Stars:</b> Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+                          <p><b>Director:</b> Chris Columbus</p>
+                          <p><b>Writer:</b> J.K. Rowling (novel), Steve Kloves (screenplay)</p>
+                          <Br />
+                          <p>This is the tale of Harry Potter (Daniel Radcliffe), an ordinary eleven-year-old boy
+                            serving as a sort of slave for his aunt and uncle who learns that he is actually a wizard
+                            and has been invited to attend the Hogwarts School for Witchcraft and Wizardry. Harry is
+                            snatched away from his mundane existence by Rubeus Hagrid (Robbie Coltrane), the
+                            groundskeeper for Hogwarts, and quickly thrown into a world completely foreign to both him
+                            and the viewer. Famous for an incident that happened at his birth, Harry makes friends
+                            easily at his new school. He soon finds, however, that the wizarding world is far more
+                            dangerous for him than he would have imagined, and he quickly learns that not all wizards
+                            are ones to be trusted.</p>
+                          <div class="rating">
+                            <i class="fas fa-star"> 7.6</i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Poster -->
+                      <div class="col-lg-4">
+                        <div class="poster-wrapper">
+                          <img class="poster" src="../img/poster/hp.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Footer of film block -->
+                <div class="row movie-p">
+                  <div class="col-lg-6 col-sm-8 friend-data">
+                    <button type="button" class="btn btn-primary btn-m"><i class="fas fa-heart"></i> Add to my
+                      list</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="rating-star">
+                      <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                      <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                      <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                      <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                      <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trailer embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mNgwNXKBEW0"
+                    allowfullscreen></iframe>
+                </div>
+                <!-- Form with header -->
+              </div>
+            </div>
+      </section>
+
+      <section class="mb-4 mt-4">
+        <div class="row">
+          <form class="col-lg-10 col-md-12 col-sm-12 mx-auto">
+            <div class="login-form">
+              <!-- User's review info -->
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+                  <div class="form-group row">
+                    <h2 class="col-sm-12">Reviews</h2>
+                  </div>
+                  <div class="form-group row">
+                    <textarea class="col-sm-9 my-review"
+                      style="margin-left:20px; margin-right: 20px;">My personal opinion. Such wow, much good. Enhoyed every moment.
+                    Magical castle and story and everything.Espesially liked Einalege part.</textarea>
+
+                    <div class="col-sm-2">
+                      <div class="rating-star">
+                        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2  friend-data">
+                      <button type="button" class="btn btn-primary btn-m btn-delete"> Publish</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Another user's info -->
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+                  <div class="col-sm-12 form-group row zero-pad">
+                    <div class="col-md-2 col-sm-12">
+                      <img src="../img/avatars/sponge.jpg" widtalt="Photo" class="avatar">
+                      <p style="margin: auto;">Best friend</p>
+                    </div>
+                    <div class="col-md-9 col-sm-12  friend-data">
+                      <p class="friend-name">I enjoyed this movie immensely. But, like "The Phantom Menace," I've had a
+                        very hard time viewing it objectively. There was so much anticipation leading up to its release,
+                        I
+                        simply enjoyed the experience of being there. Having read all four books in the series a few
+                        times
+                        each, I am overly familiar with the events in the story. As I watched the movie, my continuing
+                        thought was "How well will the next part of the story be translated to the screen?" rather than
+                        "How entertaining is this film overall?" I have trouble answering the latter question because I
+                        was already entertained by watching a wonderful story dramatized, so I'll never know how I'd
+                        have
+                        reacted had I seen this movie without having read the books.
+
+                        Critics talk about how incredibly faithful the movie is to the book, and perhaps I'd have had an
+                        easier time detaching the two in my mind had the movie set off on its own course. Indeed, many
+                        classic children's movies, like "The Wizard of Oz" and "Mary Poppins," are so successful partly
+                        because they're so different from the books that inspired them. But these are exceptions; in my
+                        experience, most children's movies reveal their weaknesses in how they diverge from the books
+                        upon
+                        which they're based. And much of what makes the Harry Potter phenomenon unique is that it is the
+                        first time in ages that a children's book, without a movie accompanying it, has generated this
+                        much popularity. According to an article I read a year ago, the universe of Harry Potter has
+                        become as real in the minds of youngsters and adults as that of a popular movie series like Star
+                        Wars. Therefore, it will be very hard for any film based upon it to compete with it. In the
+                        minds
+                        of die-hard fans, any changes made to the story will be seen as desecrating the fantasy world
+                        that
+                        Rowling created. That's why it's easy to understand why the filmmakers were so reluctant to
+                        change
+                        anything. </p>
+                    </div>
+                    <div class="col-md-1 col-sm-12  friend-data">
+                      <button type="button" class="btn btn-primary btn-m btn-delete delete-review">Delete</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-6 mb-4">
+                  <div class="col-sm-12 form-group row zero-pad">
+                    <div class="col-sm-2">
+                      <img src="../img/avatars/doggo.jpg" widtalt="Photo" class="avatar">
+                      <p style="margin: auto;">Some friend</p>
+                    </div>
+                    <div class="col-sm-9  friend-data">
+                      <p class="friend-name">There's nothing like the first in a series, is there? The introduction to
+                        the
+                        characters, the immersion into the fictional world, the first time you laugh, cry, care, and
+                        fear
+                        for someone's safety can never be repeated. No matter how many Harry Potter movies they crank
+                        out,
+                        or if they ever remake them in the future, none will come close to the wonderful first film,
+                        Harry
+                        Potter and the Sorcerer's Stone.
+
+                        I'm sure everyone has their own childhood memories of reading the Harry Potter books that
+                        they'll
+                        tell their grandkids about, but I'll never forget going to see the first movie in the theaters.
+                        The lights dimmed, John Williams's perfect theme played its first notes as Richard Harris walked
+                        down Privet Drive, and everyone in the theater was transported to another world. John Williams's
+                        numerous themes, all wonderful and a personification of the wizarding world, took the early
+                        movies
+                        to another level. As other composers tried their hands at the later films, that quality was
+                        missing. There's something truly special about going to see this movie on the big screen, and
+                        while the "magical" qualities might not all be credited to the music, it's certainly one of
+                        them.
+                      </p>
+                    </div>
+                    <div class="col-sm-1  friend-data">
+                      <button type="button" class="btn btn-primary btn-m btn-delete delete-review">Delete</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-6 mb-4">
+                  <div class="col-sm-12 form-group row zero-pad">
+                    <div class="col-sm-2">
+                      <img src="../img/avatars/thumb.jpg" widtalt="Photo" class="avatar">
+                      <p style="margin: auto;">Jostar_999</p>
+                    </div>
+                    <div class="col-sm-9  friend-data">
+                      <p class="friend-name">Welcome to the world of Harry Potter, where if you're a ten-year-old kid
+                        who
+                        doesn't fit in, you might get a letter delivered by an owl telling you you have magical powers
+                        and
+                        should go to a special school to hone them. Believe it or not, there are people who watch this
+                        movie without reading the books, so a bit of description is necessary. Obviously the stars of
+                        the
+                        show are the children, who were selected out of millions of other kids to be able to memorize
+                        lines, not look in the camera, endear themselves to worldwide audiences, and hopefully act.
+                        Daniel
+                        Radcliffe, Emma Watson, Rupert Grint, and Tom Felton are so cute and tiny in this first movie,
+                        you'll undoubtedly find yourself re-watching it as the years pass just to see them as kids
+                        again.
+                        I always marvel that child actors train themselves not to look in the camera, so even if their
+                        performances aren't perfect, I cut them slack, knowing firsthand how hard it is. And these kids
+                        had to dress in funny costumes, recite incantations without laughing, and pretend they're
+                        looking
+                        at things that were added in post production!
+
+                        Usually, in kids' movies, there's a grown-up or two who add to the cast and make the adult
+                        audience members feel less silly that they're watching it. In the Harry Potter movies, everyone
+                        wanted to be in them! Throughout the series you'll see a host of familiar faces as "guest stars"
+                        but the regulars will make special places in your heart. Richard Harris, Maggie Smith, Alan
+                        Rickman, and Robbie Coltrane are household names for little kids, because they're so convincing
+                        as
+                        the kindhearted Dumbledore, the wizened but sentimental McGonagall, the endlessly mimicable
+                        Snape,
+                        and the jolly Hagrid, kids today can't imagine they've had any other career prior to these
+                        movies!
+                        Is there any kid who doesn't immediately attribute the word "earwax" to Richard Harris, point
+                        out
+                        striped cats as "Maggie Smith cats", mumble "Shouldn't have said that," when they make a
+                        mistake,
+                        or practice putting pauses in their sentences like Alan Rickman?
+                      </p>
+                    </div>
+                    <div class="col-sm-1  friend-data">
+                      <button type="button" class="btn btn-primary btn-m btn-delete delete-review">Delete</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-6 mb-4">
+                  <div class="col-sm-12 form-group row zero-pad">
+                    <div class="col-sm-2">
+                      <img src="../img/avatars/jojo.jpg" widtalt="Photo" class="avatar">
+                      <p style="margin: auto;">Hedwig</p>
+                    </div>
+                    <div class="col-sm-9  friend-data">
+                      <p class="friend-name">
+                        First movies are so special, since they introduce audiences to a world that will hopefully
+                        capture
+                        their attention for however many more movies will be made. In J.K. Rowling's fantasy world,
+                        there's so much to fall in love with; and in the film adaptation you can really believe it
+                        exists.
+                        Seeing the Hogwarts structure for the first time creates a special feeling in your heart that
+                        can
+                        only be recaptured by watching the movie again or going to see the next in the series. The Great
+                        Hall, Quidditch, the Sorting Hat, talking portraits, flying lessons, selecting the perfect
+                        wand-all these Harry Potter moments are perfectly recreated in the first of a series that saw an
+                        entire generation grow up buying toy wands and trying Bertie Bott's Every Flavor Beans.
+
+                        Each installment has its special moments, and this first one has quite a few, even outside of
+                        the
+                        exposition. If a three-headed dog doesn't immediately conjure the name "Fluffy," chess pieces
+                        have
+                        never come to life in your imagination, you don't laugh at the idea of counting your birthday
+                        presents, and you don't know what Richard Harris wants most in the world, you're missing out on
+                        one of the great joys in life. If somehow 2001 passed you by without a trip to the movie
+                        theaters
+                        Thanksgiving weekend, go find yourself a copy of this iconic, lovely movie. </p>
+                    </div>
+                    <div class="col-sm-1  friend-data">
+                      <button type="button" class="btn btn-primary btn-m btn-delete delete-review">Delete</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+        <!-- Pagination -->
+        <section class="pagination">
+          <nav aria-label="Page navigation example" style="margin: auto">
+            <div class="text-xs-center">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+
+      </section>
+      </section>
+
+    </div>
+
+  </main>
+  <!-- Main layout -->
+  <!-- Footer -->
+  <footer class="page-footer">
+    <!-- Copyright -->
+    <div class="footer-copyright py-3 text-right">
+      <a class="nav-link waves-effect" href="mailto:alisa.meteleva@t-systems.com"><i class="fas fa-envelope"></i>
+        <span>Contact us</span>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Initializations -->
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="#6dd7ff">
+  <meta name="msapplication-TileColor" content="#6dd7ff">
+  <meta name="msapplication-navbutton-color" content="#6dd7ff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#6dd7ff">
+  <title>T-kino</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-styles.css">
+
+</head>
+
+<body class="blackground">
+  <!-- Main Navigation -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav shadow">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <div class="navbar-header navbar-nav mr-auto">
+          <a href="main.html" class="pl-0"><img src="../img/logo/mylogo.png" alt="logo" width="60px"></a>
+          <a class="navbar-brand" href="main.html" style="margin: 15px;">T-Kino</a>
+        </div>
+      </div>
+      
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" >
+        <!-- Navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="addMovie.html"><i class="fas fa-film"></i> <span
+                class="clearfix d-none d-sm-inline-block"> + </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="favs.html"><i class="fas fa-heart"></i> <span
+                class="clearfix d-none d-sm-inline-block">My list</span></a>
+          </li>
+           <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block"></span>
+              </a>
+             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="login.html">Log out</a>
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="friends.html">Friends</a>
+
+            </div> 
+          </li>
+        </ul>
+        <!-- Navbar links -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!-- Main Navigation -->
+  <!-- Main layout -->
+  <main>
+    <div class="container-fluid">
+
+      <section class="mb-4 mt-4">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 mx-auto">
+            <div class="login-form">
+              <div class="form-group row filter-group">
+                <div  class="col-lg-1 col-sm-3">             
+                  <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Title
+                  </label>
+                </div>                
+                <div class="col-lg-11 col-sm-9">                
+                  <input type="text" id="orangeForm-email" class="form-control login-input" placeholder="email@email.com">
+                </div>
+              </div>
+              
+              <div class="form-group row filter-group">
+                <div  class="col-lg-1 col-sm-3">             
+                  <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Release Date
+                  </label>
+                </div>                
+                <div class="col-lg-11 col-sm-9">                
+                  <input type="date" id="orangeForm-email" class="form-control login-input" placeholder="email@email.com">
+                </div>
+              </div>
+
+              <div class="form-group row filter-group">
+                <div  class="col-lg-1 col-sm-3">             
+                  <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Country
+                  </label>
+                </div>                
+                <div class="col-lg-11 col-sm-9">                
+                  <select class="form-control filter-input" id="exampleFormControlSelect1">
+                    <option selected="">Russia</option>
+                    <option value="1">UK</option>
+                    <option value="2">USA</option>
+                    <option value="3">Greman</option>
+                  </select>
+                 </div>
+                </div>        
+
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Duration
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9">                
+                    <input type="number" id="orangeForm-email" class="form-control login-input" placeholder="duration in minutes">
+                  </div>
+                </div>
+      
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Stars
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9">                
+                    <input id="orangeForm-email" class="form-control login-input" placeholder="actor1, actor2, actor3">
+                  </div>
+                </div>
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Director
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9">                
+                    <input id="orangeForm-email" class="form-control login-input" placeholder="Director">
+                  </div>
+                </div>
+
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Writers
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9">                
+                    <input id="orangeForm-email" class="form-control login-input" placeholder="writers">
+                  </div>
+                </div>
+
+
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Description
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9"> 
+                    <textarea class="form-control login-input" placeholder="Description"></textarea>               
+                  </div>
+                </div>
+
+                
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Synopsis
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9"> 
+                    <textarea class="form-control login-input" placeholder="Short description"></textarea>               
+                  </div>
+                </div>
+
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable"> Link to trailer
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9">                
+                    <input id="orangeForm-email" class="form-control login-input" placeholder="https://www.youtube.com/embed/mNgwNXKBEW0">
+                  </div>
+                </div>
+             
+                <div class="form-group row filter-group">
+                  <div  class="col-lg-1 col-sm-3">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable"> Image upload
+                    </label>
+                  </div>                
+                  <div class="col-lg-11 col-sm-9">                
+                    <input type="file" class="form-control-file  btn-primary btn-m btn" id="exampleFormControlFile1">
+                  </div>
+                </div>
+             
+
+              <div class="row">
+                <div class="col-lg-12">      
+                  <div class="form-group row profile-group">                
+                    <button type="button" class="btn btn-primary btn-lg">Create film</button>
+                  </div>     
+                </div>
+                  <div class="col-lg-12">      
+                      <div  class="form-group row profile-group">                          
+                        <a href="preview.html" style="margin: auto;">Watch Preview</a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- Form with header -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <!-- Main layout -->
+  <!-- Footer -->
+  <footer class="page-footer">
+    <!-- Copyright -->
+    <div class="footer-copyright py-3 text-right">
+          <a class="nav-link waves-effect" href="mailto:alisa.meteleva@t-systems.com"><i class="fas fa-envelope"></i>
+          <span>Contact us</span>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Initializations -->
+</body>
+
+</html>

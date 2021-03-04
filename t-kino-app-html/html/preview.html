@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="#6dd7ff">
+  <meta name="msapplication-TileColor" content="#6dd7ff">
+  <meta name="msapplication-navbutton-color" content="#6dd7ff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#6dd7ff">
+  <title>T-kino</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-styles.css">
+
+</head>
+
+<body class="blackground">
+  <!-- Main Navigation -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav shadow">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <div class="navbar-header navbar-nav mr-auto">
+          <a href="main.html" class="pl-0"><img src="../img/logo/mylogo.png" alt="logo" width="60px"></a>
+          <a class="navbar-brand" href="main.html" style="margin: 15px;">T-Kino</a>
+        </div>
+      </div>
+
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <!-- Navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="addMovie.html"><i class="fas fa-film"></i> <span
+                class="clearfix d-none d-sm-inline-block"> + </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="favs.html"><i class="fas fa-heart"></i> <span
+                class="clearfix d-none d-sm-inline-block">My list</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="login.html">Log out</a>
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="friends.html">Friends</a>
+
+            </div>
+          </li>
+        </ul>
+        <!-- Navbar links -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!-- Main Navigation -->
+  <!-- Main layout -->
+  <main>
+    <div class="container-fluid">
+      <section class="mb-4 mt-4">
+        <div class="row">
+          <div class="col-lg-10 col-md-12 col-sm-12 mx-auto">
+            <!-- Form with header -->
+            <div class="login-form">
+              <!-- Header -->
+              <div class="row">
+                <!-- Title -->
+                <div class="col-lg-12">
+                  <div class="form-group row movie">
+                    <h2 class="col-sm-10">Harry Potter and Sorcerer's Stone</h2>
+                  </div>
+                </div>
+                <!-- Description -->
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group row movie">
+                      <div class="col-lg-8">
+                        <!-- Details -->
+                        <div class="movie-p">
+                          <p>16 Nov 2001, UK, Adventure, Family, Fantasy, <i class="fas fa-stopwatch"> 2h32m </i></p>
+                          <p><b>Stars:</b> Daniel Radcliffe, Rupert Grint, Emma Watson</p>
+                          <p><b>Director:</b> Chris Columbus</p>
+                          <p><b>Writer:</b> J.K. Rowling (novel), Steve Kloves (screenplay)</p>
+                          <Br />
+                          <p>This is the tale of Harry Potter (Daniel Radcliffe), an ordinary eleven-year-old boy
+                            serving as a sort of slave for his aunt and uncle who learns that he is actually a wizard
+                            and has been invited to attend the Hogwarts School for Witchcraft and Wizardry. Harry is
+                            snatched away from his mundane existence by Rubeus Hagrid (Robbie Coltrane), the
+                            groundskeeper for Hogwarts, and quickly thrown into a world completely foreign to both him
+                            and the viewer. Famous for an incident that happened at his birth, Harry makes friends
+                            easily at his new school. He soon finds, however, that the wizarding world is far more
+                            dangerous for him than he would have imagined, and he quickly learns that not all wizards
+                            are ones to be trusted.</p>
+                          <div class="rating">
+                            <i class="fas fa-star"> 7.6</i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Poster -->
+                      <div class="col-lg-4">
+                        <div class="poster-wrapper">
+                          <img class="poster" src="../img/poster/hp.jpg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Footer of film block -->
+                <div class="row movie-p">
+                  <div class="col-lg-6 col-sm-8 friend-data">
+                    <button type="button" class="btn btn-primary btn-m"><i class="fas fa-heart"></i> Add to my
+                      list</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="rating-star">
+                      <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                      <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                      <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                      <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                      <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trailer embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mNgwNXKBEW0"
+                    allowfullscreen></iframe>
+                </div>
+                <!-- Form with header -->
+              </div>
+            </div>
+      </section>
+
+      </section>
+
+    </div>
+
+  </main>
+  <!-- Main layout -->
+  <!-- Footer -->
+  <footer class="page-footer">
+    <!-- Copyright -->
+    <div class="footer-copyright py-3 text-right">
+      <a class="nav-link waves-effect" href="mailto:alisa.meteleva@t-systems.com"><i class="fas fa-envelope"></i>
+        <span>Contact us</span>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Initializations -->
+</body>
+
+</html>

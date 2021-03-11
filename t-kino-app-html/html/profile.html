@@ -63,86 +63,111 @@
   <main>
     <div class="container-fluid">
       <!-- Movie cards -->
-      <section class="mb-4 mt-4 profile">
+      <section class="mb-4 mt-4">
         <form>
+
           <div class="row">
-            <div class="col-md-12 col-sm-12 mb-4">
-              <div class="form-group row profile-group">
-                <h2 class="col-sm-12">Profile settings</h2>
-              </div>
-             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form-group row profile-group">
-                <div  class="col-sm-4">             
-                  <img src="../img/avatars/thumb.jpg" widtalt="Photo" class="userpick">       
-                </div>     
-                <div class="col-sm-4 profile-button">                
-                    <input type="file" class="form-control-file  btn-primary btn-m btn" id="exampleFormControlFile1">
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <div class="login-form">
+                <div class="row">
+                  <div class="col-sm-12">      
+                    <div class="form-group row profile-group">                
+                      <h3 style="margin:auto;">Profile settings</h3>
+                    </div>      
                   </div>
-                <div class="profile-button col-sm-4 ">
-                  <button type="button" class="btn btn-primary btn-m btn-delete" >Delete</button>
+                </div>
+                
+                <div class="form-group row profile-group">                
+                  <div  class="col-sm-3 col-md-2">             
+                    <label class="col-form-label filter-lable">E-mail
+                    </label>
+                  </div>                
+                  <div class="col-sm-9 col-md-9 col-lg-9">                
+                    <label class="col-form-label filter-lable">mega-drakon@t-kino.ru
+                    </div>
+                </div>
+
+                <div class="form-group row profile-group">                
+                  <div  class="col-sm-3 col-md-2">             
+                    <label for="exampleFormControlSelect1 profile-input" class="col-form-label filter-lable">Name
+                    </label>
+                  </div>                
+                  <div class="col-sm-9 col-md-9 col-lg-9">                
+                    <input type="text" class="form-control profile-input" value="boy_who_lived">
+                  </div>
+                </div>
+
+                <div class="form-group row profile-group">                
+                  <div  class="col-sm-3 col-md-2">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Password
+                    </label>
+                  </div>                
+                  <div class="col-sm-9 col-md-9 col-lg-9">                
+                    <input class="form-control profile-input" id="exampleFormControlSelect1" type="password" value="1234">
+                  </div>
+                </div>
+
+                <div class="form-group row profile-group">                
+                  <div  class="col-sm-3 col-md-2">             
+                    <label for="exampleFormControlSelect1" class="col-form-label filter-lable">Old Password
+                    </label>
+                  </div>                
+                  <div class="col-sm-9 col-md-9 col-lg-9">                
+                    <input class="form-control profile-input" id="exampleFormControlSelect1" type="password" value="1234">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12">      
+                    <div class="form-group row profile-group">                
+                      <button type="button" class="btn btn-primary btn-lg">Accept profile changes</button>
+                    </div>      
+                  </div>
                 </div>
               </div>
-             </div>
-          </div>
-        
-          <div class="row">
-            <!-- //https://www.npmjs.com/package/multiselect-react-dropdown -->
-            <div class="col-lg-6 col-sm-6 mb-4">      
-              <div class="form-group row profile-group">                
-                <div  class="col-sm-4">             
-                  <label for="exampleFormControlSelect1" class="col-form-label"> Name </label>
-                </div>               
-                <div class="col-sm-8">                
-                  <input class="form-control profile-input" id="exampleFormControlSelect1" value="boy_who_lived">
-                </div>
-              </div>      
-            </div>
-
-            <div class="col-lg-6  col-sm-6 mb-4">      
-              <div class="form-group row profile-group">                
-                <div  class="col-sm-4">             
-                  <label for="exampleFormControlSelect1" class="col-form-label"> E-mail </label>
-                </div>               
-                <div class="col-sm-8">                
-                  <input class="form-control profile-input" id="exampleFormControlSelect1" value="mega-drakon@t-kino.ru">
-                </div>
-              </div>      
-            </div>
-
-            <div class="col-lg-6 col-sm-6 mb-4">      
-              <div class="form-group row profile-group">                
-                <div  class="col-sm-4">             
-                  <label for="exampleFormControlSelect1" class="col-form-label"> Password </label>
-                </div>               
-                <div class="col-sm-8">                
-                  <input class="form-control profile-input" id="exampleFormControlSelect1" type="password" value="1234">
-                </div>
-              </div>      
-            </div>
-
-            <div class="col-lg-6 col-sm-6 mb-4">      
-              <div class="form-group row profile-group">                
-                <div  class="col-sm-4">             
-                  <label for="exampleFormControlSelect1" class="col-form-labele"> Old password </label>
-                </div>               
-                <div class="col-sm-8">                
-                  <input class="form-control profile-input" id="exampleFormControlSelect1" type="password" value="adminadmin">
-                </div>
-              </div>      
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">      
-              <div class="form-group row profile-group">                
-                <button type="button" class="btn btn-primary btn-lg">Update profile info</button>
-              </div>      
-            </div>
-          </div>
+              </div>
           </div>
         </form>
+
+
+        <form >
+          <div class="row" style="margin-top:50px;">
+            <div class="col-sm-12 col-md-10 mx-auto">
+              <div class="login-form">
+                <div class="row">
+                  <div class="col-sm-12">      
+                    <div class="form-group row profile-group">                
+                      <h3 style="margin:auto;">Avatar settings</h3>
+                    </div>      
+                  </div>
+                </div>
+              
+                <div class="form-group row profile-group">
+                  <div  class="col-md-2 col-sm-1">             
+                    <img src="../img/avatars/thumb.jpg" widtalt="Photo" class="userpick">       
+                  </div>     
+                  <div class="profile-button col-sm-9 col-md-4 col-lg-4">   
+                    <label for="upload-photo" class="btn-primary btn-m btn">Browse avatar</label>
+                      <input  id="upload-photo"  type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+
+                    <div class="profile-button col-sm-9 col-md-4 col-lg-5">   
+                        <button type="button" class="btn btn-primary btn-m btn-delete">Remove avatar</button>
+                      </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-sm-12">      
+                    <div class="form-group row profile-group">                
+                      <button type="button" class="btn btn-primary btn-lg">Accept avatar changes</button>
+                    </div>      
+                  </div>
+                </div>
+              </div>
+          </div>
+          </form>
+
+        </div>
       </section>
       </div>
 
@@ -153,7 +178,7 @@
     <!-- Copyright -->
     <div class="footer-copyright py-3 text-right">
           <a class="nav-link waves-effect" href="mailto:alisa.meteleva@t-systems.com"><i class="fas fa-envelope"></i>
-          <span>Contact us</span>
+          <span>Contact us</span></a>
     </div>
   </footer>
   <!-- Footer -->

@@ -50,7 +50,7 @@ function MovieConfigurationComponent() {
                     </label>
                   </div>                
                   <div className="col-lg-10 col-sm-9">                
-                    <input type="number" id="orangeForm-email" className="form-control login-input" placeholder="duration in minutes"/>
+                    <input type="number" id="orangeForm-email" min="0" className="form-control login-input" placeholder="duration in minutes"/>
                   </div>
                 </div>
       

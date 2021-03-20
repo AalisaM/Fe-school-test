@@ -1,5 +1,5 @@
 import { React } from "react";
-import ReviewsComponent from "./ReviewsComponent";
+import {ReviewsComponent, MyReviewComponent } from "./ReviewsComponent";
 
 import poster from "./img/poster/hp.jpg";
 
@@ -40,7 +40,7 @@ function Movie(){
                     </div>
                   </div>
                   <div className="col-lg-4">
-                    <div className="poster-wrapper">
+                    <div className="">
                       <img className="poster" src={poster}/>
                     </div>
                   </div>
@@ -48,21 +48,10 @@ function Movie(){
               </div>
             </div>
             <div className="row movie-p">
-              <div className="col-lg-6 col-sm-6 friend-data movie-button">
+              <div className="col-lg-12 col-sm-12 movie-button">
                 <button type="button" className="btn btn-primary btn-m">
-                  {/* <span className="/*clearfix d-none d-sm-inline-block">Add to my list</span> */}
                   <span>Add to my list</span>
-                  {/* <i className="fa fa-heart"></i> */}
                 </button>
-              </div>
-              <div className="col-sm-4">
-                <div className="rating-star">
-                  <input type="radio" name="rating" value="5" id="5"/><label for="5">☆</label>
-                  <input type="radio" name="rating" value="4" id="4"/><label for="4">☆</label>
-                  <input type="radio" name="rating" value="3" id="3"/><label for="3">☆</label>
-                  <input type="radio" name="rating" value="2" id="2"/><label for="2">☆</label>
-                  <input type="radio" name="rating" value="1" id="1"/><label for="1">☆</label>
-                </div>
               </div>
             </div>
 
@@ -83,11 +72,10 @@ function MovieComponent() {
     <div className="container-fluid">
       <Movie/>
       <ReviewsComponent/>
+      <MyReviewComponent/>
     </div>
   );
 }
-
-// export default MovieComponent;
 
 
 function PreviewComponent(){

@@ -6,15 +6,15 @@ export function Nav() {
   return (
     <header>
       <Navbar expand="lg" fixed="top" className="scrolling-navbar shadow">
-        <div className="navbar">
-          <div className="navbar-header navbar-nav mr-auto">
+        <div className="navbar mr-auto">
+          <div className="navbar-header navbar-nav">
             <a href="/" className="pl-0"><img src={mainLogo} alt="logo" width="60px"/></a>
             <a className="navbar-brand" href="/">T-Kino</a>
           </div>
         </div>
 
         <div className="navbar" >
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link waves-effect" href="/movie/add">
                 <span className="clearfix d-sm-inline-block">
@@ -33,7 +33,7 @@ export function Nav() {
               <NavDropdown.Header>the_boy_who_lived</NavDropdown.Header>
               <NavDropdown.Item href="/login">Logout</NavDropdown.Item>
               <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
-              <NavDropdown.Item href="/friends">Friends</NavDropdown.Item>
+              <NavDropdown.Item href="/friends">Friends (2)</NavDropdown.Item>
             </NavDropdown>
           </ul>
         </div>

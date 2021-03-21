@@ -49,7 +49,7 @@ function FilterComponent() {
                 <div className="col-lg-6 col-md-6 col-sm-6 mb-4">
                   <div className="form-group row filter-group">
                     <div className="col-sm-4 col-lg-3">
-                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Genre  <i className="fa fa-fw fa-sort"></i></label>
+                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Genre  </label>
                     </div>
                     <div className="col-sm-8 col-lg-9">
                       <select className="form-control filter-input" id="exampleFormControlSelect1">
@@ -67,7 +67,7 @@ function FilterComponent() {
                 <div className="col-lg-6 col-md-6 col-sm-6 mb-4">
                   <div className="form-group row filter-group">
                     <div className="col-sm-4 col-lg-3">
-                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Country  <i className="fa fa-fw fa-sort"></i></label>
+                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Country  </label>
                     </div>
                     <div className="col-sm-8 col-lg-9">
 
@@ -86,7 +86,7 @@ function FilterComponent() {
                 <div className="col-lg-6 col-md-6 col-sm-6 mb-4">
                   <div className="form-group row filter-group">
                     <div className="col-sm-4 col-lg-3">
-                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Director  <i className="fa fa-fw fa-sort"></i></label>
+                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Director  </label>
                     </div>
                     <div className="col-sm-8 col-lg-9">
                       <input className="form-control filter-input" id="exampleFormControlSelect1" placeholder="Tarantino" />
@@ -97,7 +97,7 @@ function FilterComponent() {
                 <div className="col-lg-6 col-md-6 col-sm-6 mb-4">
                   <div className="form-group row filter-group">
                     <div className="col-sm-4 col-lg-3">
-                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Year  <i className="fa fa-fw fa-sort"></i></label>
+                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Year  </label>
                     </div>
                     <div className="col-sm-8 col-lg-9">
                       <input className="form-control filter-input" id="exampleFormControlSelect1" placeholder="1990-2010 or 1850 or 1758,1867" />
@@ -109,7 +109,7 @@ function FilterComponent() {
                 <div className="col-lg-6 col-md-6 col-sm-6 mb-4">
                   <div className="form-group row filter-group">
                     <div className="col-sm-4 col-lg-3">
-                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">MPAA  <i className="fa fa-fw fa-sort"></i></label>
+                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">MPAA  </label>
                     </div>
                     <div className="col-sm-8 col-lg-9">
                       <select className="form-control filter-input" id="exampleFormControlSelect1">
@@ -128,7 +128,7 @@ function FilterComponent() {
                 <div className="col-lg-6 col-md-6 col-sm-6 mb-4">
                   <div className="form-group row filter-group">
                     <div className="col-sm-4 col-lg-3">
-                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Rating  <i className="fa fa-fw fa-sort"></i></label>
+                      <label htmlFor="exampleFormControlSelect1" className="col-form-label filter-lable">Rating  </label>
                     </div>
                     <div className="col-sm-8 col-lg-9">
                       <select className="form-control filter-input" id="exampleFormControlSelect1">
